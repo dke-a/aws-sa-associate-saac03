@@ -20,7 +20,7 @@ Resources:
       KeyName: !Ref KeyName
       InstanceType: "t2.micro"
       ImageId: !Ref LatestAmiId
-      IamInstanceProfile: !Ref SessionManagerInstanceProfile
+      IamInstanceProfile: !Ref SessionManagerInstanceProfile #gives permission to use SessionManager
       SecurityGroups:
         - !Ref InstanceSecurityGroup
   InstanceSecurityGroup:
@@ -63,16 +63,16 @@ Outputs:
     Value: !Ref EC2Instance
   AZ:
     Description: Availability Zone of the newly created EC2 instance
-    Value: !GetAtt 
+    Value: !GetAtt #functions
       - EC2Instance
       - AvailabilityZone
   PublicDNS:
     Description: Public DNSName of the newly created EC2 instance
-    Value: !GetAtt 
+    Value: !GetAtt #functions
       - EC2Instance
       - PublicDnsName
   PublicIP:
     Description: Public IP address of the newly created EC2 instance
-    Value: !GetAtt 
+    Value: !GetAtt #functions
       - EC2Instance
       - PublicIp 
