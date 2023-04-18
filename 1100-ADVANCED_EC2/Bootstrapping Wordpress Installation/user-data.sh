@@ -3,8 +3,8 @@
 # Setpassword & DB Variables
 DBName='a4lwordpress'
 DBUser='a4lwordpress'
-DBPassword='REPLACEME'
-DBRootPassword='REPLACEME'
+DBPassword='animals4lif3'
+DBRootPassword='animals4lif3'
 
 # System Updates
 yum -y update
