@@ -74,3 +74,7 @@ To demonstrate NFS
 ![](images/20230503143934.png)
 
 ## Switch to Instance B
+
+![](images/20230503144056.png)
+
+![](images/20230503144549.png)
